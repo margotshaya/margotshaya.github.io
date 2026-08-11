@@ -150,7 +150,7 @@ a {
 
     border-radius: 50%;
 
-    border: 5px solid white;
+    border: 5px solid black;
 
     overflow: hidden;
 
@@ -425,7 +425,7 @@ main {
 .project-card > img {
     width: 100%;
 
-    height: 145px;
+    height: 220px;
 
     object-fit: cover;
 
@@ -617,14 +617,32 @@ footer {
    RESEARCH PAGE
 ================================================== */
 
-.page-header {
-    max-width: 750px;
+/* ==================================================
+   HEADER
+================================================== */
+
+.research-header {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 4rem;
+
+    align-items: center;
+
+    min-height: 400px;
 
     padding: 5rem 0 4rem;
 }
 
-.page-header h1 {
-    margin: 0 0 1.5rem;
+/* Text side */
+
+.research-header-text {
+    max-width: 600px;
+}
+
+.research-header-text h1 {
+    margin: 0 ;
 
     font-family: Georgia, "Times New Roman", serif;
 
@@ -633,14 +651,90 @@ footer {
     line-height: 1.1;
 
     font-weight: 500;
+
+    color: #17233d;
 }
 
-.page-header > p:last-child {
-    max-width: 650px;
+.research-header-text > p:last-child {
+    max-width: 600px;
 
-    color: #5b6473;
+    margin: 0;
 
-    font-size: 1.1rem;
+    color: #26324b;
+
+    /* color: #5b6473; */
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+}
+
+
+.research-header-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps image proportions intact */
+  
+}
+
+/* Circular image */
+/*
+.research-header-image {
+    width: 400px;
+    height: 400px;
+
+    margin: 0 auto;
+
+    border-radius: 50%;
+
+    border: 3px solid black;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.research-header-image img{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+*/
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .research-header {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+        padding: 3rem 0;
+    }
+
+    .research-header-text {
+        text-align: center;
+    }
+
+    .research-header-text .accent-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .research-header-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .research-header-image img {
+        height: auto;
+    }
+
 }
 
 
@@ -683,9 +777,7 @@ footer {
 
     width: 100%;
 
-    height: 400px;
-
-    object-fit: cover;
+    height: auto;
 
     border-radius: 4px;
 }
@@ -777,7 +869,7 @@ footer {
     }
 
     .research-project-image img {
-        height: 280px;
+        height: auto;
     }
 
 }
