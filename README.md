@@ -1,4 +1,7 @@
-## Hi there 👋
+## Margot's personal website
+
+Welcome! I am putting together a web page with information about my research in glaciology.
+
 
 <!--
 **margotshaya/margotshaya** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
