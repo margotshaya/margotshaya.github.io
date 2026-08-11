@@ -5,44 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Margot Shaya</title>
+    <title>Margot Shaya | Glaciologist</title>
 
     <meta name="description"
-          content="Margot's personal website">
+          content="Margot's personal website.">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <!-- Navigation -->
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
 
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
 
-            <a class="site-name" href="index.html">
-                Margot Shaya</a>
+        <div class="nav-container">
 
-            <div class="nav-links">
-                <a href="research.html">Research</a>
+            <a href="index.html" class="site-name">
+                Margot Shaya
+            </a>
+
+            <nav class="nav-links">
+                <a href="#research">Research</a>
                 <a href="publications.html">Publications</a>
+                <a href="cv.html">CV</a>
+                <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
+
     </header>
 
-    <!-- Main content -->
-    <main>
-        <!-- Hero section -->
 
-        <section class="hero">
+    <!-- ==========================================
+         HERO
+    =========================================== -->
 
-            <div class="hero-image">
-                <img src="images/margotinAntarctica.jpg"
-                        alt="Margot in Antarctica">
+    <section class="hero">
+
+        <!-- Background image -->
+        <div class="hero-background">
+            
+                <img
+                    src="images/AH_background.jpg"
+                    alt="Allan Hills Antarctica"
+                    class="portrait"
+                >
+        </div>
+
+        <div class="hero-container">
+
+            <!-- Circular portrait -->
+            <div class="portrait-container">
+
+                <img
+                    src="images/margotinAntarctica.jpg"
+                    alt="Portrait of Margot Shaya"
+                    class="portrait"
+                >
+
             </div>
 
-            <div class="hero-text">
+
+            <!-- Introduction -->
+            <div class="hero-content">
+
                 <p class="eyebrow">
                     Glaciologist &amp; PhD Student
                 </p>
@@ -51,88 +82,236 @@
                     Margot Shaya
                 </h1>
 
-                <p class="intro">
+                <div class="accent-line"></div>
+
+                <p class="hero-description">
                     I am a PhD student at the University of Washington. I use radar and models to study ice flow in Antarctic blue ice areas!
                 </p>
+
+
+                <!-- External links -->
+
+                <div class="social-links">
+
+                    <a href="mailto:mshaya@uw.edu">
+                        <span class="icon">✉</span>
+                        Email
+                    </a>
+
+                    <a href="https://orcid.org/0009-0008-9935-0874">
+                        <span class="icon">iD</span>
+                        ORCID
+                    </a>
+
+                    <a href="https://github.com/margotshaya">
+                        <span class="icon">●</span>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         RESEARCH INTRODUCTION
+    =========================================== -->
+
+    <main>
+
+        <section class="research-intro" id="research">
+
+            <div class="research-image">
+
+                <img
+                    src="images/sun_halo_photo.jpg"
+                    alt="Distant silhouette of a person raising their arms to the sky, with a faint halo of light around the sun above."> 
+                >
+
+            </div>
+
+
+            <div class="research-text">
+
+                <h2>
+                    Research
+                </h2>
+
+                <p>
+                    I am broadly interested in measuring and modeling the flow of ice. For my PhD research, 
+                    I am studying the dynamics of the Allan Hills, Antarctica: a blue ice area where the 
+                    oldest known ice on Earth has been recovered!
+                </p>
+
+                <p>
+                    I’ve been to Antarctica twice to collect ice penetrating radar and GPS data. 
+                    These data can show how the ice is flowing in the present-day. And conditions today 
+                    – such as the shape of radar layers or the orientation of ice crystals – 
+                    can help constrain ice flow in the past. I use simple kinematic models to 
+                    compare with data to learn about past and present ice flow.
+            </p>
+                </p>
+
+                <a href="research.html" class="outline-button">
+                    Learn more about my research
+                    <span>→</span>
+                </a>
+
             </div>
 
         </section>
 
-        <!-- About / research introduction -->
 
-        <section class="section">
-            <h2>Research</h2>
+        <!-- ==========================================
+             RESEARCH PROJECTS
+        =========================================== -->
 
-            <p>
-                I am broadly interested in measuring and modeling the flow of ice. For my PhD research, 
-                I am studying the dynamics of the Allan Hills, Antarctica: a blue ice area where the 
-                oldest known ice on Earth has been recovered!
-            </p>
+        <section class="projects">
 
-            <p>
-                I’ve been to Antarctica twice to collect ice penetrating radar and GPS data. 
-                These data can show how the ice is flowing in the present-day. And conditions today 
-                – such as the shape of radar layers or the orientation of ice crystals – 
-                can help constrain ice flow in the past. I use simple kinematic models to 
-                compare with data to learn about past and present ice flow.
-            </p>
+            <div class="section-heading">
 
-        </section>
+                <h2>
+                    Research Projects
+                </h2>
 
-        <!-- Featured images-->
+                <a href="research.html">
+                    View all projects&nbsp; →
+                </a>
 
-        <section class="image-grid">
-            <figure>
-                 <img src="images/shakedown.jpg" 
-                 alt="A National Science Foundation tracked vehicle, called the Hägglunds, driving into the flat expanse of the Antarctic ice sheet"> 
-                 <figcaption> 
-                    Hägglunds on the way out to a deep field shakedown. 
-                 </figcaption> 
-            </figure>
+            </div>
 
-            <figure>
-                 <img src="images/sun_halo_photo.jpg" 
-                 alt="Distant silhouette of a person raising their arms to the sky, with a faint halo of light around the sun above."> 
-                 <figcaption> 
-                    Sun halo over the blue ice of the Allan Hills.
-                 </figcaption> 
-            </figure>
-
-        </section>
-
-        <!-- Selected projects -->
-
-        <section class="section">
-            <h2>Selected Projects</h2>
 
             <div class="project-grid">
-                <a class="project-card" href="research.html"> 
-                    <h3>Tidewater Glacier Calving</h3> 
-                    <p> 
-                        Calving of icebergs from tidewater glaciers contributes significant kinetic energy, 
-                        which can accelerate water velocities and increase the rate of melting.
-                    </p> 
+
+
+                <!-- Project 1 -->
+
+                <a href="research.html#tidewater-glaciers"
+                   class="project-card">
+
+                    <img
+                        src="images/tidewater.jpg"
+                        alt="Tidewater glacier terminus"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            Tidewater Glacier Calving
+                        </h3>
+
+                        <p> 
+                            Calving of icebergs from tidewater glaciers contributes significant energy, 
+                            which accelerates water velocities and increases melting.
+                        </p> 
+
+                        <span class="learn-more">
+                            Learn more&nbsp; →
+                        </span>
+
+                    </div>
+
                 </a>
 
-                <a class="project-card" href="research.html"> 
-                    <h3>Ice Flow at the Allan Hills</h3> 
-                    <p> 
-                        Phase-sensitive radar measurements capture the very slow ice flow of the Allan Hills
-                        blue ice area. Comparing these measurements to a kinematic model corroborates the data
-                        and provides insight into the flow.
-                    </p> 
+
+                <!-- Project 2 -->
+
+                <a href="research.html#blue-ice-flow"
+                   class="project-card">
+
+                    <img
+                        src="images/AH_map.jpg"
+                            alt="Map of the Allan Hills region in Antarctica"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            Ice Flow at the Allan Hills
+                        </h3>
+
+                        <p> 
+                            Phase-sensitive radar measurements capture the very slow ice flow of the Allan Hills
+                            blue ice area. 
+                        </p> 
+
+                        <span class="learn-more">
+                            Learn more&nbsp; →
+                        </span>
+
+                    </div>
+
                 </a>
 
+
+                <!-- Project 3 -->
+
+                <a href="research.html#fieldwork"
+                   class="project-card">
+
+                    <img
+                        src="images/ApRES.jpg"
+                        alt="Close up of the ApRES radar computer on the ice surface, with researchers in the background"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            Field Observations
+                        </h3>
+
+                        <p>
+                            Collecting radar, GPS, and surface data
+                            across Antarctica to study ice processes.
+                        </p>
+
+                        <span class="learn-more">
+                            Learn more&nbsp; →
+                        </span>
+
+                    </div>
+
+                </a>
 
             </div>
 
-
-        </section>"
+        </section>
 
     </main>
 
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
     <footer>
-        <p>&copy; 2026 Margot Shaya</p>
+
+        <div class="footer-container">
+
+            <p>
+                &copy; 2026 Margot Shaya
+            </p>
+
+            <div>
+                <a href="mailto:mshaya@uw.edu">
+                    Email
+                </a>
+
+                <a href="https://github.com/margotshaya">
+                    GitHub
+                </a>
+
+                <a href="https://orcid.org/0009-0008-9935-0874">
+                    ORCID
+                </a>
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
