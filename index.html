@@ -5,40 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Your Name</title>
+    <title>Margot Shaya</title>
 
     <meta name="description"
-          content="Margot Shaya personal website">
+          content="Margot's personal website">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
+
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar">
+
+            <a class="site-name" href="index.html">
+                Margot Shaya</a>
+
+            <div class="nav-links">
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
     </header>
 
+    <!-- Main content -->
     <main>
+        <!-- Hero section -->
 
         <section class="hero">
 
-            <h1>Margot Shaya</h1>
+            <div class="hero-image">
+                <img src="images/margotinAntarctica.jpg"
+                        alt="Margot in Antarctica">
+            </div>
 
-            <p class="subtitle">
-                Glaciologist &amp; PhD Student 
+            <div class="hero-text">
+                <p class="eyebrow">
+                    Glaciologist &amp; PhD Student
+                </p>
+
+                <h1>
+                    Margot Shaya
+                </h1>
+
+                <p class="intro">
+                    I am a PhD student at the University of Washington. I use radar and models to study ice flow in Antarctic blue ice areas!
+                </p>
+            </div>
+
+        </section>
+
+        <!-- About / research introduction -->
+
+        <section class="section">
+            <h2>Research</h2>
+
+            <p>
+                I am broadly interested in measuring and modeling the flow of ice. For my PhD research, 
+                I am studying the dynamics of the Allan Hills, Antarctica: a blue ice area where the 
+                oldest known ice on Earth has been recovered!
             </p>
 
             <p>
-                I am a PhD student at the University of Washington. I use radar and models to study ice flow in Antarctic blue ice areas. 
+                I’ve been to Antarctica twice to collect ice penetrating radar and GPS data. 
+                These data can show how the ice is flowing in the present-day. And conditions today 
+                – such as the shape of radar layers or the orientation of ice crystals – 
+                can help constrain ice flow in the past. I use simple kinematic models to 
+                compare with data to learn about past and present ice flow.
             </p>
 
         </section>
+
+        <!-- Featured images-->
+
+        <section class="image-grid">
+            <figure>
+                 <img src="images/shakedown.jpg" 
+                 alt="A National Science Foundation tracked vehicle, called the Hägglunds, driving into the flat expanse of the Antarctic ice sheet"> 
+                 <figcaption> 
+                    Hägglunds on the way out to a deep field shakedown. 
+                 </figcaption> 
+            </figure>
+
+            <figure>
+                 <img src="images/sun_halo_photo.jpg" 
+                 alt="Distant silhouette of a person raising their arms to the sky, with a faint halo of light around the sun above."> 
+                 <figcaption> 
+                    Sun halo over the blue ice of the Allan Hills.
+                 </figcaption> 
+            </figure>
+
+        </section>
+
+        <!-- Selected projects -->
+
+        <section class="section">
+            <h2>Selected Projects</h2>
+
+            <div class="project-grid">
+                <a class="project-card" href="research.html"> 
+                    <h3>Tidewater Glacier Calving</h3> 
+                    <p> 
+                        Calving of icebergs from tidewater glaciers contributes significant kinetic energy, 
+                        which can accelerate water velocities and increase the rate of melting.
+                    </p> 
+                </a>
+
+                <a class="project-card" href="research.html"> 
+                    <h3>Ice Flow at the Allan Hills</h3> 
+                    <p> 
+                        Phase-sensitive radar measurements capture the very slow ice flow of the Allan Hills
+                        blue ice area. Comparing these measurements to a kinematic model corroborates the data
+                        and provides insight into the flow.
+                    </p> 
+                </a>
+
+
+            </div>
+
+
+        </section>"
 
     </main>
 
